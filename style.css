@@ -1,0 +1,17 @@
+form {
+    font-weight: bold;
+    background-color: rgb(242, 199, 240);
+   /* box-shadow: 4px 6px 9px 0px #00000099;*/
+    justify-items: center;
+
+}
+
+.btn-info{
+    transition: 0.3s;
+}
+.btn-info:hover {
+    background-color: #e727b7 !important; /* bleu plus foncé */
+    border-color: #e625e0;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

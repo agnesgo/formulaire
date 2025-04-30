@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="traitement.php">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 
 <body>
-    
-</body>
+    </head>
+
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+<div>
+    <header>
+        <br><br><br><br>
+    </header>
+</div>
+        <form action="traitement.php" method="post"  >
+            <!-- champs du formulaire -->
+            <fieldset class="row g-3 p-3 shadow p-3 mb-5 bg-body-tertiary rounded" >
+
+                <div class="col-md-4">
+                <label class="form-label" for="nom">Votre nom :</label>
+                <input class="form-control" type="text" id="nom" name="nom"  id="floatingInput" placeholder="nom">
+            </div>
+
+                <div class="col-md-4">
+                    <label class="form-label" for="pays">Pays :</label>
+                <select class="form-select" name="pays" aria-label="Default select example"> Pays
+                    <option value="fr">France</option>
+                    <option value="be">Belgique</option>
+                </select>
+            </div>
+
+               <div class="col-md-8"> <label class="form-label" for="message"></label> votre message ici:
+                <textarea class="form-control" name="message" rows="5" cols="30"></textarea>
+            </div>
+
+            <div >
+                <button type="submit" class="btn btn-info " >Envoyer</button>
+            </div>
+
+            </fieldset>
+        </form>
+
+
+    </body>
+
 </html>
